@@ -1,5 +1,9 @@
 # Bestikk Log
 
+ifdef::env-github[]
+image:http://img.shields.io/npm/v/bestikk-log.svg[npm version, link=https://www.npmjs.org/package/bestikk-log]
+endif::[]
+
 A simple console logger for your Node build scripts.
 
 ## Install
