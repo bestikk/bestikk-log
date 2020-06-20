@@ -1,6 +1,7 @@
 # Bestikk Log
 
 [![npm version](http://img.shields.io/npm/v/bestikk-log.svg)](https://www.npmjs.org/package/bestikk-log)
+[![Build](https://github.com/bestikk/bestikk-log/workflows/Build/badge.svg)](https://github.com/bestikk/bestikk-log/actions?query=workflow%3ABuild)
 
 A simple console logger for your Node build scripts.
 
