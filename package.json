@@ -2,9 +2,12 @@
   "name": "bestikk-log",
   "version": "0.1.0",
   "description": "A simple console logger for your Node build scripts.",
-  "main": "index.js",
+  "main": "index.cjs",
+  "module": "index.esm.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dist": "rollup -c",
+    "lint": "standard src test.js",
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,12 @@
   },
   "homepage": "https://github.com/bestikk/bestikk-log",
   "dependencies": {
-    "colors": "1.1.2"
+    "colors": "1.4.0"
+  },
+  "devDependencies": {
+    "ava": "^3.9.0",
+    "rollup": "^2.17.1",
+    "sinon": "^9.0.2",
+    "standard": "^14.3.4"
   }
 }
