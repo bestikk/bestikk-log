@@ -2,38 +2,36 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
-
-var colors = _interopDefault(require('colors/safe'));
+var colorette = require('colorette');
 
 function transform (action, source, destination) {
-  console.log(action + ' ' + colors.cyan(source) + ' to ' + colors.cyan(destination));
+  console.log(`${action} ${colorette.cyan(source)} to ${colorette.cyan(destination)}`);
 }
 
 function debug (message) {
-  console.log(' - ' + colors.blue(message));
+  console.log(` - ${colorette.blue(message)}`);
 }
 
 function info (message) {
-  console.log(colors.magenta(message));
+  console.log(colorette.magenta(message));
 }
 
 function warn (message) {
-  console.log(colors.yellow(message));
+  console.log(colorette.yellow(message));
 }
 
 function error (message) {
-  console.log(colors.red(message));
+  console.log(colorette.red(message));
 }
 
 function success (message) {
   console.log('');
-  console.log(colors.green('>>') + ' ' + message);
+  console.log(`${colorette.green('>>')} ${message}`);
 }
 
 function task (message) {
   console.log('');
-  console.log(colors.underline(message));
+  console.log(colorette.underline(message));
 }
 
 const log = { transform, debug, info, warn, error, success, task };

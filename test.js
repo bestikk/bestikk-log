@@ -1,5 +1,5 @@
 const test = require('ava')
-const log = require('./index.cjs')
+const log = require('./dist/index.cjs')
 const sinon = require('sinon')
 
 test('task', async t => {

@@ -1,33 +1,33 @@
-import colors from 'colors/safe';
+import { cyan, blue, magenta, yellow, red, green, underline } from 'colorette';
 
 function transform (action, source, destination) {
-  console.log(action + ' ' + colors.cyan(source) + ' to ' + colors.cyan(destination));
+  console.log(`${action} ${cyan(source)} to ${cyan(destination)}`);
 }
 
 function debug (message) {
-  console.log(' - ' + colors.blue(message));
+  console.log(` - ${blue(message)}`);
 }
 
 function info (message) {
-  console.log(colors.magenta(message));
+  console.log(magenta(message));
 }
 
 function warn (message) {
-  console.log(colors.yellow(message));
+  console.log(yellow(message));
 }
 
 function error (message) {
-  console.log(colors.red(message));
+  console.log(red(message));
 }
 
 function success (message) {
   console.log('');
-  console.log(colors.green('>>') + ' ' + message);
+  console.log(`${green('>>')} ${message}`);
 }
 
 function task (message) {
   console.log('');
-  console.log(colors.underline(message));
+  console.log(underline(message));
 }
 
 const log = { transform, debug, info, warn, error, success, task };

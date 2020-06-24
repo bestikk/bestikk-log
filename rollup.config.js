@@ -2,7 +2,7 @@ export default [
   {
     input: 'src/main.js',
     output: {
-      file: 'index.cjs',
+      file: 'dist/index.cjs',
       format: 'cjs',
       exports: 'named'
     },
@@ -11,7 +11,7 @@ export default [
   {
     input: 'src/main.js',
     output: {
-      file: 'index.esm.js',
+      file: 'dist/index.esm.js',
       format: 'es'
     },
     external: [ 'colors/safe' ]
