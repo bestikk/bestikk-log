@@ -1,6 +1,6 @@
 {
   "name": "bestikk-log",
-  "version": "0.1.0",
+  "version": "1.0.0-alpha.1",
   "description": "A simple console logger for your Node build scripts.",
   "main": "dist/index.cjs",
   "module": "dist/index.esm.js",
