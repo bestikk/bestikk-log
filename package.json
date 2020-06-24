@@ -4,7 +4,9 @@
   "description": "A simple console logger for your Node build scripts.",
   "main": "dist/index.cjs",
   "module": "dist/index.esm.js",
-  "files": [],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dist": "rollup -c",
     "lint": "standard src test.js",
