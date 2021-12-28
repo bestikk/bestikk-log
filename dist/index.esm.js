@@ -32,5 +32,4 @@ function task (message) {
 
 const log = { transform, debug, info, warn, error, success, task };
 
-export default log;
-export { debug, error, info, success, task, transform, warn };
+export { debug, log as default, error, info, success, task, transform, warn };

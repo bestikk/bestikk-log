@@ -37,7 +37,7 @@ function task (message) {
 const log = { transform, debug, info, warn, error, success, task };
 
 exports.debug = debug;
-exports.default = log;
+exports["default"] = log;
 exports.error = error;
 exports.info = info;
 exports.success = success;
