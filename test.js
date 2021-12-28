@@ -1,6 +1,6 @@
-const test = require('ava')
-const log = require('./dist/index.cjs')
-const sinon = require('sinon')
+import test from 'ava'
+import log from './dist/index.cjs'
+import sinon from 'sinon'
 
 test('task', async t => {
   const spy = sinon.spy(console, 'log')
